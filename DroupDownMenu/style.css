@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+.parent{
+    width: 100%;
+    height: 162px;
+    position: relative;
+    padding-right: 220px;
+    z-index: 1;
+}
+.nav{
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav-details{
+    position: relative;
+    z-index: 2;
+    top: -66px;
+    height: 35px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px 0px;
+    border-right: none;
+}
+.nav-button{
+    color: white;
+    background-color:rgba(40, 47, 48, 0.39);
+    height: fit-content;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 2px;
+    border: 1px solid white;
+}
+.nav-button:hover{
+    background-color: rgba(40, 47, 48, 0.733);
+    color: black;
+    font-weight: 700;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 5px;
+}
+.droup-down{
+    height: fit-content;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+}
+.droup-down a{
+    display: none;
+    color: black;
+    height: 32px;
+    width: 100%;
+    text-decoration: none;
+    line-height: 28px;
+}
+a:hover{
+    background-color: rgb(176, 183, 189);
+    border: 1px solid rgb(6, 76, 138) ;
+    border-radius: 5px;
+}
+.file:hover a{
+    display: inline-block;
+}
+.edit:hover a{
+    display: inline-block;
+}
+
+.selection:hover a{
+    display: inline-block;
+}
+.view:hover a{
+    display: inline-block;
+} 
